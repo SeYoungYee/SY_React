@@ -75,3 +75,33 @@ export default function TodoList() {
 ```
 
 위 내용을 `리액트.md` 파일에 저장하면 해당 컴포넌트에 대한 간략한 설명이 담긴 문서를 생성할 수 있습니다.
+
+# 사진띄우기
+=======
+```jsx
+import React from 'react';
+import img from './img/pinggu.jpg';
+
+function Avatar() {
+    return (
+        <img
+            style={{
+                display: 'block', // 이미지를 블록 요소로 설정하여 가로 중앙 정렬
+                margin: 'auto', // margin을 auto로 설정하여 수평 중앙 정렬
+                width: '400px',
+                height: '300px',
+            }}
+            className="avatar"
+            src={img}
+            alt="PingGu"
+        />
+    );
+}
+
+export default function Profile() {
+    return (
+        <Avatar />
+    );
+}
+
+```
