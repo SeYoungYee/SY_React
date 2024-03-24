@@ -1,0 +1,18 @@
+import DayList from "./component/DayList";
+import Header from "./component/Header";
+import Day from "./component/Day";
+
+function App() {
+    const font = {
+        textAlign: 'center'
+    }
+    return (
+        <div className="App" style={font}>
+            <Header/>
+            <DayList/>
+            <Day />
+        </div>
+    );
+}
+
+export default App;
